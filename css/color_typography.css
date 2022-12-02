@@ -1,0 +1,38 @@
+/*
+  Fecha: 28/11/2022
+  Autor: Hely Pereira Almeida.
+  Módulo: Lenguaje de marcas y sistemas de gestión de la información.
+  Unidad: 02
+  Tarea evaluativa 2
+*/
+
+:root {
+    /**
+  * 01. COLOR SETTNGS
+  *
+  * -------------------------------------------------------------------
+  */
+   --white: #ffffff;
+   --background: #f1efec;
+   --black: #000000;
+   --darkGreen: #283a2c;
+   --lightGreen: #b1b886;
+   --clearGreen: #daddc5;
+   --lightOrange: #F4A261;
+   --darkOrange: #E76F51;
+   
+   /**
+ * 02. TIPOGRAPHY SIZE SETTINGS
+ *
+ * -------------------------------------------------------------------
+ */
+ 
+   --main: 4.5rem;
+   --title: 2.75rem;
+   --subtitle: 1.75rem;
+   --subtitleSmaller: 2rem;
+   --description: 1.25rem;
+   --paragraph: 0.875rem; 
+   --reference: 0.625rem;
+ }
+ 

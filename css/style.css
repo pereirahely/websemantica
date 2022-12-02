@@ -1,0 +1,784 @@
+/*
+  Fecha: 28/11/2022
+  Autor: Hely Pereira Almeida.
+  Módulo: Lenguaje de marcas y sistemas de gestión de la información.
+  Unidad: 02
+  Tarea evaluativa 2
+*/
+@import url(color_typography.css);
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=IM+Fell+French+Canon:ital@0;1&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/***** GENERAL SETTINGS AND SCROLL SELECTORS *****/
+::-webkit-scrollbar {
+  width: 0.25rem;
+  border: 0.0625rem solid var(--background);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: var(--lightGreen);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: var(--darkOrange);
+}
+
+* { 
+  font-family: 'Karla', sans-serif;
+  font-size: var(--paragraph);
+}
+
+a { 
+  text-decoration: none; 
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: var(--white);
+  margin: 0;
+  padding: 0;
+}
+
+  /**
+* 03. HEADER AND NAV
+*
+* -------------------------------------------------------------------
+*/
+
+.logo {
+  width: 5%;
+  padding: 0.625rem;
+  margin-left: 3.125rem;
+
+}
+
+.menu-icon {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: var(--darkGreen);
+}
+
+.menu-elements {
+  transition: 0.5s;
+  color: var(--white);
+  margin: 0rem 1.875rem;
+  list-style: none;
+}
+
+
+.menu-elements:hover{
+  color: var(--lightGreen);
+}
+
+
+.contact-button {
+  transition: 0.5s;
+  background-color: var(--lightOrange);
+  border-radius: 6.188rem;
+  padding: 0.75rem 1.563rem;
+  margin: 0;
+  color: var(--white);
+}
+
+.contact-button:hover {
+  background-color: var(--lightGreen);
+  color: var(--white);
+}
+
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 3.125rem;
+}
+
+.link {
+  transition: 0.5s;
+  padding: 0.438rem 0.625rem;
+  border-radius: 6.188rem;
+  background-color: var(--lightGreen);
+  color: var(--white);
+}
+
+.link:hover{
+  background-color: var(--darkGreen);
+}
+
+
+  /**
+* 04. SLIDER SECTION
+*
+* -------------------------------------------------------------------
+*/
+
+.title {
+  text-align: center;
+  font-family: 'IM Fell French Canon', serif;
+  font-weight: 400;
+  font-size: var(--main);
+  margin: 0;
+  color: var(--white);
+}
+
+.slider-subtitle {
+  text-align: center;
+  margin-top: 0;
+  font-weight: 300;
+  font-size: var(--subtitle);
+  font-style: oblique;
+}
+
+.subtitle {
+  font-family: 'IM Fell French Canon', serif;
+  font-weight: 400;
+  font-size: var(--title);
+  color: var(--white);
+  text-align: center;
+}
+
+.small-title {
+  font-family: 'IM Fell French Canon', serif;
+  font-size: var(--subtitle);
+  color: var(--darkGreen);
+}
+
+#container-slider{
+color: var(--white);
+padding: 12.625rem 0rem;
+background: linear-gradient(#283a2c, rgba(0, 0, 0, 0.499)) ,url(../images/pexels-alka-jha-1912882.jpg) no-repeat center bottom fixed; 
+background-size: cover;
+}
+
+
+  /**
+* 05. INTRODUCTION MAIN CONTENT
+*
+* -------------------------------------------------------------------
+*/
+#container-presentation {
+  display: flex;
+  padding: 6.25rem 3.125rem;
+  align-items: center;
+  background-color: var(--darkGreen);
+}
+
+.presentation {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-left: 6.25rem; 
+}
+
+#container-presentation p {
+  color: var(--white);
+  font-size: var(--description);
+  line-height: 1.75rem;
+  font-weight: 300;
+}
+
+ 
+  /**
+* 06. TOP #3 PLACES
+*
+* -------------------------------------------------------------------
+*/
+#container-top-places {
+  background: url(../images/brujula_blanca.png) no-repeat center center fixed; 
+  background-size: 31.25rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3.125rem 3.125rem 9.375rem 3.125rem;
+  background-color: var(--background);
+}
+
+
+#container-places {
+  display: flex;
+}
+
+.place {
+  width: 33.3%;
+  margin: 1.25rem;
+  background-color: var(--white);
+  padding: 1.25rem;
+  box-shadow: 0.188rem 0.063rem 0.625rem 0rem #0000005e;
+}
+
+
+
+.title-place-index {
+  text-align: left;
+  font-family: 'IM Fell French Canon', serif;
+  font-weight: 400;
+  font-size: var(--description);
+  margin: 0.313rem;
+  color: #000000;
+}
+
+
+.place-middle {
+  transition: 0.5s;
+  width: 33.3%;
+  margin: 1.25rem 0rem;
+  background: linear-gradient(45deg, var(--white), #ffffff85);
+  /* background-color: var(--white); */
+  padding: 1.25rem;
+  box-shadow: 0.188rem 0.063rem 0.625rem 0rem #0000005e;
+  transform: rotate(10deg);
+}
+
+
+.img-place {
+  width: 100%;
+}
+
+
+  /**
+* 07. PLACES SECTION -> TOP 6
+*
+* -------------------------------------------------------------------
+*/
+
+#container-slider-places{
+  color: var(--white);
+  padding: 12.625rem 0rem;
+  background: linear-gradient(#283a2c, rgba(0, 0, 0, 0.499)) ,url(../images/pexels-oleksandr-pidvalnyi-2166559.jpg) no-repeat center center fixed; 
+  background-size: cover;
+  }
+  
+  #container-top-six-places {
+    background: url(../images/brujula_blanca.png) no-repeat center center fixed;
+    background-size: 31.25rem;
+    padding: 1.25rem 3.125rem;
+    background-color: var(--background);
+  }
+
+  #container-six-places {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .six-place {
+    width: 27%;
+    margin: 0.938rem;
+    background-color: var(--white);
+    padding: 1.25rem;
+    box-shadow: 0.188rem 0.063rem 0.625rem 0rem #0000005e;
+  }
+
+.title-places{
+  padding: 6.25rem 0rem;
+  color: var(--darkGreen);
+  font-size: var(--description);
+}
+
+
+
+  /**
+* 07. SINGLE PLACE (1 destination)
+*
+* -------------------------------------------------------------------
+*/
+ 
+ #container-slider-place{
+  color: var(--white);
+  padding: 12.625rem 0rem;
+  background: linear-gradient(#283a2c, rgba(0, 0, 0, 0.499)) ,url(../images/danakil-el-peligroso-lugar-en-la-tierra-donde-no-podemos-sobrevivir-desierto-dallol-285561-1_1024.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+   
+#container-information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/brujula_blanca.png) no-repeat center top fixed;
+  background-size: 31.25rem;
+  padding: 5.25rem 0rem;
+  background-color: var(--background);
+}
+
+.title-place {
+  text-align: center;
+  font-family: 'IM Fell French Canon', serif;
+  font-weight: 400;
+  font-size: var(--title);
+  margin: 0;
+  color: var(--white);
+}
+
+.place-description {
+  width: 40%;
+  margin: 2.25rem;
+  padding: 1.25rem;
+}
+
+.place-description p {
+  text-align: justify;
+}
+
+
+.selected-place {
+  transition: 0.5s;
+  width: 40%;
+  background-color: var(--white);
+  padding: 1.25rem;
+  box-shadow: 0.188rem 0.063rem 0.625rem 0rem #0000005e;
+}
+
+#place-pictures {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--background);
+}
+
+.img-description {
+  width: 33%;
+  margin: 0.1%;
+}
+
+
+
+  /**
+* 08. NEWS SECTION
+*
+* -------------------------------------------------------------------
+*/
+
+.news-page-title {
+  font-size: var(--main);
+  text-align: center;
+  padding-top: 6.25rem;
+  color: var(--darkGreen);
+  font-family: 'IM Fell French Canon', serif;
+}
+#container-news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--white);
+  padding: 3.125rem;
+}
+
+.news-bigger {
+  width: 58%;
+  margin: 1.875rem;
+  display: flex;
+  padding: 1.625rem;
+  background-color: var(--background);
+  color: var(--darkGreen);
+  flex-direction: column;
+}
+.news {
+  width: 30%;
+  margin: 1.25rem;
+}
+
+.news img{
+  width: 100%;
+}
+
+.link-news {
+  transition: 0.5s;
+  padding: 0.438rem 0.625rem;
+  border-radius: 6.188rem;
+  background-color: var(--background);
+  color: var(--darkGreen);
+}
+
+.link-news:hover{
+  background-color: var(--lightGreen);
+}
+
+
+  /**
+* 09. SINGLE NEWS
+*
+* -------------------------------------------------------------------
+*/
+ 
+#container-single-news{
+  display: flex;  
+  padding: 6.25rem;
+}
+
+
+
+.title-single-news{
+  font-size: 2.5rem;
+  font-family: 'Gideon Roman', cursive;
+}
+
+.lateral-title {  
+  color: black;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.938rem;
+}
+
+.box-article{
+  display: flex;
+  width: 80%;
+
+}
+
+aside {
+  width: 25%;
+}
+.box-article article {
+  padding: 0rem 3.125rem;
+}
+
+.box-article img {
+  width: 70%;
+  margin: auto;
+}
+
+.lateral-link {
+  color: black;
+  font-family: 'Gideon Roman', cursive;
+}
+
+#box-l {
+  background-color: rgb(241, 241, 241);
+  padding: 0.625rem;
+}
+
+.img-l {
+  width: 100%;
+}
+
+.lateral-link-l {
+  font-family: 'Gideon Roman', cursive;
+}
+
+
+  /**
+* 10. CONTACT SECTION
+*
+* -------------------------------------------------------------------
+*/
+#container-contact {
+  display: flex;
+  padding: 3.125rem;
+}
+
+
+#container-contact h3{
+  font-size: 1.75rem;
+}
+
+.info-contact {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+  text-align: center;
+}
+
+.form-contact {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.75rem;
+  padding-top: 6.25rem;
+  font-family: 'IM Fell French Canon', serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0rem 3.125rem;
+}
+
+input {
+padding: 0.9375rem;
+border: none;
+border-bottom: 0.0625rem solid var(--black);
+color: var(--darkGreen);
+}
+
+.label {
+  margin-bottom: 0.3125rem;
+  color: var(--darkGreen);
+}
+
+.button {
+  transition: 0.5s;
+  background-color: var(--lightOrange);
+  border: none;
+  border-radius: 6.1875rem;
+  padding: 0.625rem 3.125rem;
+  color: var(--white);
+  margin-top: 0.625rem;
+}
+
+.button:hover {
+  transition: 0.5s;
+  background-color: var(--lightGreen);
+}
+
+
+textarea{
+  resize: none;
+}
+
+  /**
+* 11. FOOTER
+*
+* -------------------------------------------------------------------
+*/
+
+footer {
+  list-style: none;
+  background-color: var(--darkGreen);
+  color: var(--white);
+  text-align: center;
+  font-size: var(--reference);
+  padding: 1.25rem 3.125rem;
+  text-align: left;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-title {
+  font-size: 0.875rem;
+  color: var(--lightGreen);
+}
+
+.f-link {
+  transition: 0.5s;
+  font-size: var(--description);
+  color: var(--white);
+}
+.f-link:hover{
+  color: var(--lightGreen);
+}
+
+footer p {
+  padding-top: 1.25rem;
+  border-top: 0.063rem solid var(--lightGreen);
+  text-align: center;
+  font-size: var(--reference);
+}
+
+#derechos {
+  padding: 100px 100px;
+}
+
+#derechos p {
+  font-size: 22px;
+}
+
+
+
+  /**
+* 12. RESPONSIVE DESIGN
+*
+* -------------------------------------------------------------------
+*/
+
+ 
+@media (max-width: 48rem) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 10%;
+    margin: auto;
+  }
+
+  .menu {
+    flex-direction: column;
+    display: none;
+    padding-bottom: 1.25rem;
+    text-align: center;
+  }
+
+  .menu-icon {
+    padding: 0.625rem;
+    display: block;
+    margin-right: 1.625rem;
+    width: 10%;
+  }
+
+  .menu-logo {
+    display: flex;
+    align-items: center;
+  }
+  .menu-elements {
+    transition: 0.5s;
+    color: var(--white);
+    font-size: var(--subtitle) ;
+    list-style: none;
+    line-height: 2.5rem;
+  }
+  .contact-button {
+    font-size: var(--subtitle);
+    line-height: 4.6875rem;
+    font-size: 1rem;
+    border-radius: 0;
+  }
+  footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #container-presentation {
+    display: flex;
+    padding: 6.25rem 3.125rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #container-slider {
+    padding: 14.25rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 5.5rem;
+  }
+  .subtitle{
+    font-size: 2.75rem;
+  }
+  .slider-subtitle{
+    font-size: 2.75rem;
+  }
+  .presentation {
+    margin-left: 0;
+  }
+
+  /***** places section *****/
+  #container-places {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #container-top-places {
+    background: url(../images/brujula_blanca.png) repeat center center fixed;
+    background-size: 31.25rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.125rem 1.125rem 4.375rem 1.125rem;
+    background-color: var(--clearGreen);
+  }
+
+  .place {
+    width: 100%;
+    /* margin: 1.25rem; */
+    background-color: var(--white);
+    padding: 1.25rem;
+    box-shadow: 0.188rem 0.063rem 0.625rem 0rem #0000005e;
+  }
+
+  .place-middle {
+    transition: 0.5s;
+    width: 100%;
+    margin: 0.25rem 1rem;
+    background-color: var(--white);
+    padding: 1.25rem;
+    box-shadow: 0.188rem 0.063rem 0.625rem 0rem #0000005e;
+    transform: rotate(0deg);
+  }
+    
+  .six-place {
+    width: 100%;
+  }
+
+  #container-top-six-places {
+    padding: 1.25rem;
+  }
+
+
+  /***** single place *****/
+
+  #container-information {
+    padding: 0; 
+  }
+  .place-description {
+    width: 100%;
+  }
+
+  .selected-place {
+    width: 80%;
+  }
+
+  .img-description {
+    width: 100%;
+    margin: 1%;
+  }
+
+  /***** news section *****/
+  #container-news {
+    padding: 2.125rem;
+  }
+  .news {
+    width: 100%;
+  }
+  .news-bigger {
+    width: 100%;
+  }
+
+  /**** sigle news *****/
+  #container-single-news {
+    display: flex;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  aside {
+    width: 80%;
+  }
+  .box-article article {
+    padding: 0rem;
+  }
+
+  /***** contact section *****/
+  #container-contact {
+    display: flex;
+    padding: 1.125rem;
+    flex-direction: column;
+  }
+
+  .info-contact {
+    width: 100%; 
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .form-contact {
+    width: 100%;
+  }
+
+}

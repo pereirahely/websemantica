@@ -1,0 +1,112 @@
+<!--
+  Fecha: 28/11/2022
+  Autor: Hely Pereira Almeida.
+  Módulo: Lenguaje de marcas y sistemas de gestión de la información.
+  Unidad: 02
+  Tarea evaluativa 2
+-->
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Website for exotic travelers">
+    <meta name="keywords" content="travelers, exotic places">
+    <meta name="author" content="Hely Pereira">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weird Travels</title>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <div class="menu-logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+          <img src="images/menu.png" alt="menu-icon" class="menu-icon">
+        </div>
+        <ul class="menu">
+          <li><a href="index.html" class="menu-elements">Inicio</a></li>
+          <li><a href="destinos.html" class="menu-elements">Destinos</a></li>
+          <li><a href="noticias.html" class="menu-elements">Noticias</a></li>
+          <li><a href="contacto.html" class="contact-button">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="container-slider">
+      <h1 class="title">Weird Travels</h1>
+      <h2 class="slider-subtitle">Sitios raros para visitar en el planeta Tierra</h2>
+    </section>
+
+    <!-- Presentation -->
+    <section id="container-presentation">
+      <h3 class="subtitle">¿Qué nos diferencia?</h3>
+      <article class="presentation">
+        <p>Weird Travels - nació de la pasión por hacer las cosas de manera diferente.<br>
+          Nuestro equipo está unido por la pasión por la exploración y la creencia de que el tipo correcto de viaje puede hacer del mundo un mejor lugar.
+        </p>
+
+      </article>
+    </section>
+
+    <!-- Top 3  -->
+    <section id="container-top-places">
+      <h3 class="small-title">Destinos Top #3</h3>
+      <div id="container-places">
+        <article class="place">
+          <img src="images/parque-nacional-de-yellowstone_1_1000x575.jpeg" alt="yellowstone" class="img-place">
+            <h4 class="title-place-index">#1 PARQUE NACIONAL DE YELLOWSTONE</h4> 
+            <p>Según el Servicio de Parques Nacionales de EEUU, este anillo de colores vivos mide de 60 a 90 metros de diámetro y 36 de profundidad. Con estas dimensiones, no es extraño que sea tan popular entre fotógrafos y turistas por igual.</p>
+            <a href="https://www.nps.gov/yell/index.htm" target="_blank" class="link">Leer más</a>
+        </article>
+  
+        <article class="place-middle">
+          <img src="images/aguas-termales-en-la-depresion-de-danakil_1_1000x575.jpeg" alt="dankil" class="img-place">
+          <h4 class="title-place-index">#2 DEPRESIÓN DE DANAKIL, ETIOPÍA</h4>
+          <p>Es uno de los lugares más inhóspitos y extraños de la Tierra. Conocida como la "puerta de entrada al infierno" según la BBC, es probablemente lo más cerca que jamás se podrá estar de pie sobre la superficie de Venus (sin la atmósfera aplastante, por supuesto).</p>
+          <a href="destino.html" class="link">Leer más</a>
+        </article>
+  
+        <article class="place">
+          <img src="images/5m6j9edb2ca41.jpg" alt="antartida"  class="img-place">
+          <h4 class="title-place-index">#3 EL GLACIAR TAYLOR, ANTÁRTIDA</h4>
+          <p>Popularmente conocido como "glaciar sangrante", fue descubierto en 1911 por el geógrafo Griffith Taylor en la Antártida.</p>
+          <a href="destinos.html" class="link">Leer más</a>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <section id="f-destination">
+          <ul>
+            <h5 class="f-title">Destinos</h5>
+            <li><a href="" class="f-link">África</a></li>
+            <li><a href="" class="f-link">Asia</a></li>
+            <li><a href="" class="f-link">Australasia</a></li>
+            <li><a href="" class="f-link">Europe</a></li>
+            <li><a href="" class="f-link">Latinoamerica</a></li>
+          </ul>
+        </section>
+        <section id="f-contact">
+          <ul>
+            <h5 class="f-title">Contacto</h5>
+            <li><a href="" class="f-link">experience@weirdtravel.com</a></li>
+          </ul>
+        </section>
+        <section id="f-social">
+          <ul>
+            <h5 class="f-title">Información</h5>
+            <li><a href="derechos.html" class="f-link">Bibliografía</a></li>
+            <li><a href="derechos.html" class="f-link" >Derechos</a></li>
+          </ul>
+        </section>
+      </div>
+      <p>2022 Hely Pereira</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/menu-responsive.js"></script>
+  </body>
+</html>
